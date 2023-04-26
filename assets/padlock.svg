@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="640" height="1000" xmlns="http://www.w3.org/2000/svg">
+ <title>registration required lock</title>
+ <g>
+  <title>Layer 1</title>
+  <g id="shackle">
+   <path id="svg_1" d="m110,530l0,-260a210,210 0 0 1 420,0l0,260" fill="none" stroke="#07c" stroke-width="75"/>
+  </g>
+  <g id="body">
+   <path d="m60,680h520m-260,-260v520" fill="none" stroke="#07c" stroke-width="75" id="svg_3"/>
+   <circle id="svg_2" r="260" cy="680" cx="320" stroke-width="75" stroke="#07c" fill="#07c"/>
+  </g>
+ </g>
+</svg>

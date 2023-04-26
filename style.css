@@ -1,0 +1,670 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing:border-box; 
+    font-family:Montserrat, sans-serif,Geneva,Tahoma;
+    margin: 0;
+    padding: 0;
+    
+    min-height: 100vh;
+}
+
+
+
+
+/*header styling */
+header{
+    background-color:#00aeff ;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height:5em;
+}
+.logo{
+
+    margin:0.5em 2em;
+    padding-bottom: 5px;
+}
+span>a{
+    color:white;
+    padding-bottom: 5px;
+}
+
+.navi{
+    
+display: flex;   
+ gap:40px; 
+ margin:10px;      
+}
+.customer-care {
+    display: flex;
+    padding-top: 5px;
+    
+}
+.customer-care>img {
+    max-width: 5em;
+    height: 3em;
+    border-radius: 50%;
+    z-index: 3;
+    padding-top: 5px;
+}
+.customer-details {
+    background-color: #084482;
+    position: relative;
+    border-radius: 60px;
+    margin-left: -1em;
+    font-size:2px;
+    padding-right: 5em;
+    cursor: pointer;
+    }
+  span.customer-details>p:first-child{
+        color: #00aeff;
+        font-size: 0.7rem;
+        text-align: center;
+    }
+    span.customer-details>p:last-child {
+        text-align: center;
+        font-size: 0.7rem;
+        color:white;
+        
+    }
+    .text{
+        font-size: 0.8rem;
+        color:#4f4f4f;
+    }
+    .dropdown1{
+        position:absolute;
+        width:180px;
+        background: white;
+        margin-top: 0.3rem;
+        font-size:10px;
+    z-index: 25;
+        padding-top: 10px;
+    
+       visibility:hidden;
+        opacity:0;
+        transform:translateY(0.5em);
+        transition: all 0.3secs ease-in-out;
+        
+    
+       }
+       .show1{
+        visibility:visible;
+        opacity: 1;
+        transform: translateY(0em);
+       }
+    
+    .currency {
+        display: flex;
+        margin-left: 25px;
+    }
+    .currency>img {
+        max-width: 3em;
+        height: 2em;
+        padding-top: 0.3em;
+    }
+    .currency >span {
+        padding-top: 10px;
+    }
+   
+   .btn2{
+    background-color: #00aeff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding:0.6em;
+    cursor:pointer;
+    border: none;
+    position: relative;
+    border-radius: 9px;
+    margin-left: 35px;
+    column-gap: 0.5rem;
+    
+   }
+   .dropdown{
+    position:absolute;
+    width:120px;
+    background: white;
+    margin-top: 0.3rem;
+    font-size:10px;
+    visibility:hidden;
+    opacity:0;
+    transform:translateY(0.5em);
+    transition: all 0.3secs ease-in-out;
+    z-index: 15;
+
+   }
+   
+   .dropdown a{
+    display: block;
+    background-color:#00aeff;
+    color: #4f4f4f;
+    text-align: center;
+    border:none;
+    border-radius: 0.7em;
+    margin-top: 1em;
+  padding-top: 8px;
+  padding-bottom: 8px;
+   }
+  .dropdown_signup a{
+    display: inline;
+    text-align: center;
+    background-color: white;
+
+  }
+
+   
+   .show{
+    visibility:visible;
+    opacity: 1;
+    transform: translateY(0em);
+   }
+
+/* website banner and search index */
+#container1{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width:100vw;
+    height:45vh;
+    font-size: bold;
+}
+
+
+#container1::before{
+    content:'';
+    background: url(./assets/banner.jpg) no-repeat center center/cover;
+    width: 100vw;
+    height:45vh;
+
+}
+#row1 {
+    
+    color:white;
+    font-weight: bolder;
+    line-height: 0;
+    position: absolute;
+    inset:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: bold;
+    background: rgba(57, 57, 57,0.5);
+    
+
+}
+#search{
+    width:auto;
+    height:5em;
+    display: flex;
+    padding-top:20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1px;
+    padding-bottom: 0.5em;
+    background-color: white;
+}
+
+.btn{
+    
+    
+    width:30%;
+    height:3em;
+    background-color: #00aeff;
+    color:white; 
+    font-size: 14px;
+}
+.btn:hover{
+    cursor: pointer;
+    background: #00aeee;
+
+}
+.search1-field i{
+    position: absolute;
+}
+.search1-field{
+    border:1px thin grey;
+    border-radius: 5px;
+    width:90%;
+    height:3em;
+    
+}
+.icon{
+    min-width: 40px;
+    padding: 12px;
+    margin-left: 10px;
+}
+
+.input-field{
+    width:90%;
+    text-align:center;
+    height: 3em;
+    
+    margin-left: 15px;
+}
+.select-field{
+
+    
+    width: 50%;
+    height: 3em;
+}
+#search{
+    position: sticky;
+    top:0;
+    z-index: 200;
+}
+/* website content styling */
+#main{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.main1-text{
+    font-weight: bolder;
+    font-size: 25px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 0;
+}
+.main2-text{
+letter-spacing: 0.5px;
+line-height: 0;
+}
+.divider{
+    border: 2px solid #00aeff;
+    width:4em;
+    margin:1.5em auto;
+    
+}
+#hotels{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    
+}
+
+.lettering{
+    text-align: center;
+    border:2px solid #00aeff;
+    border-radius: 5px;
+    color: #00aeff;
+    font-size: 13px;
+    width: 150px;
+}
+a:link{
+    text-decoration: none;
+
+}
+a{
+    color:#00aeee;
+}
+a:visited{
+    text-decoration: none;
+}
+.overview{
+    transform: scale(0);
+    transition:all .3secs ease-in-out;
+    background-color: #00aeee;
+
+
+}
+.lettering:hover .overview{
+    transform: scale(1);
+}
+
+
+/*Hotel Advert styling*/
+#container2{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    
+}
+.lettering1{
+    color:darkslategrey;
+}
+
+.img-wrapper{
+    position:relative;
+    width: 1000px;
+    height:500px;
+    border:1px solid black;
+    margin: 20px;
+}
+.img-wrapper img{
+    width: 1000px;
+    height: 400px;
+    position: relative;
+}
+.overlay{
+    position: absolute;
+}
+.overlay_1{
+    background-color:#FC8233;
+    top:12%;
+    left:-20px;
+    padding:0.125em;
+    margin:0.5px;
+    color:white;
+    z-index:10;
+    display: block;
+    max-width: 200px;
+    min-width: 140px;
+    align-items: center;
+    
+}
+.sidelay{
+    display:block;
+    background-color: #FC8233;
+    position: absolute;
+    width:1.5rem;
+    height: 1.5rem;
+    transform:skewY(-40deg);
+    top:10%;
+    padding:0.125em;
+    margin:0.5px;
+    left: -20px;
+    z-index:-5;
+
+
+}
+span.info{
+    color: #00aeee;
+    line-height: 2px;
+    padding: 1em;
+    
+    
+}
+
+ 
+
+.lettering4{
+    color:darkslategrey;
+    font-size: 10px;
+    padding: 2.5em;
+}
+
+
+/* cities advert styling */
+.adverts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*hotels in cities styling */
+#cities{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   padding: 10px;
+    gap: 5px;
+
+    
+    
+}
+
+.cities{
+    width:330px;
+    height:250px;
+    display: flex;
+    margin:10px;
+    border-radius: 5px;
+    
+}
+
+
+.city-info{
+    color: white;
+    background-color: rgba(57, 57, 57,0.5);
+     display: flex;
+     border-radius: inherit;
+    width: inherit;
+    height: inherit; 
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+    position: relative;
+}
+.hoverview{
+    position:absolute;
+    
+    width:100%;
+    height: 48%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    align-items: center;
+    padding-top: 10em;
+    transform: scale(0);
+    transition: all .3s ease-in-out;
+}.hoverview_1{
+    left:0;
+    top:0;
+    bottom: 0;
+    width:100%;
+    height: 42%;
+    color: white; 
+    background-color: rgba(57, 57, 57,0.5);
+     font-size:15px;
+    padding-top: 12px;
+     text-align: center;
+}
+.cities:hover .hoverview{
+    transform: scale(1);
+}
+button{
+    border: 1px grove white;
+    border-radius: 9px;
+    width:50%;
+    height:3em;
+    background-color: #00aeee;
+    color:#fff;
+    font-size:14px;
+}
+
+
+
+/*hotels and states */
+.states{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+}
+/* special form fields*/
+.registration{
+    height: 200px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa;
+line-height: 1.5px;
+}
+#search2{
+    width:auto;
+    height:30px;
+    display: flex;
+    padding-top:30px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.btn1{
+    border:1px groove white;
+    border-radius: 9px;
+    width:200px;
+    height:3em;
+    background-color: #00aeff;
+    color:white; 
+    font-size: 14px;
+}
+.btn1:hover{
+    cursor: pointer;
+    background: #00aeee;
+
+}
+.search2-field{
+    border:1px solid #00aeee;
+    border-radius: 5px;
+    width:350px;
+    height:3em;
+}
+/*profile validation*/
+#container4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    gap:10px
+}
+li{
+    list-style: none;
+}
+/*footer styling*/
+#container5{
+    
+    background-color: #EFF8FB;
+    background-size: cover;
+display: flex;
+position: relative;
+max-width:1100px;
+
+}
+.container-image{
+    margin-left: 55px;
+    margin-top: 55px;
+
+
+}
+.main3-text{
+    font-weight: bolder;
+    font-size: 45px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.5;
+    color: #00aeff;
+}
+.main4-text{
+    letter-spacing: 1.5px;
+    line-height: 1;
+    }
+    aside{
+        margin-left: 20px;
+        padding-top: 8em;
+    }
+    .deals{
+        position: relative;
+        background-color: #084482;
+        padding: 16px;
+        min-height: 95px;
+        margin: 0;
+        color: #fff;
+        display: flex;
+        justify-content:flex-start
+        
+    }
+.writeup{
+    color:white;
+    font-size: 20px;
+}
+.writeup1{
+    color:#00aeee;
+}
+.form{
+    display: flex;
+}
+.myform{
+    width:20em;
+    height: 41px;
+    color:black;
+    margin: 10px;
+    border-radius: 4px 0 0 4px;
+
+}
+.type{
+    margin-top:10px;
+    margin-left:0;
+    width:20em;
+    height: 41px;
+    border-radius: 4px 0 0 4px;
+}
+.footer1{
+    padding:30px 15px;
+    max-width: 100%;
+    margin-left:auto;
+    margin-right: auto;
+    font-size:14px;
+
+    display:block;
+}
+.company{
+    width:20%;
+    margin-right:0;
+    float:left;
+    display:block;
+    text-align:left;
+}
+.community{
+    width:20%;
+    margin-right:0;
+    float:left;
+    display:block;
+    text-align:left;
+}
+.Top-cities{
+    width:20%;
+    margin-right:0;
+    float:left;
+    display:block;
+    text-align:left;
+}
+.Top-destinations{
+    width:20%;
+    margin-right:0;
+    float:left;
+    display:block;
+    text-align:left;
+}
+.Top-hotels{
+    width:20%;
+    margin-right:0;
+    float:left;
+    display:block;
+    text-align:left;
+}
+.headers{
+    color:#afa7ad;
+    border-bottom: 1px solid #e2e6e9;
+    padding-bottom: 2px;
+    margin-bottom: 5px;
+}
+
+.footer2{
+    padding: 20px 0;
+    padding-left:20px;
+    text-align: left;
+    color:#afa7ad;
+    display: inline-block;
+}
+.footer2>p{
+    display: inline-block;
+    padding-bottom:25px;
+    margin: 3px;
+}
